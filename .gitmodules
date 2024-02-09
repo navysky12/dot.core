@@ -7,3 +7,6 @@
 [submodule ".config/zsh/plugins/zsh-syntax-highlighting"]
 	path = .config/zsh/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule ".config/yazi/plugins/comicthumb.yazi"]
+	path = .config/yazi/plugins/comicthumb.yazi
+	url = https://github.com/navysky12/comicthumb.yazi.git
