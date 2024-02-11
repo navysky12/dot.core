@@ -7,3 +7,4 @@ return {
     vim.cmd([[colorscheme wal]])
   end,
 }
+

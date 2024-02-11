@@ -24,3 +24,4 @@ config.enable_scroll_bar = true
 
 -- and finally, return the configuration to wezterm
 return config
+

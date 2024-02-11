@@ -111,9 +111,6 @@ fi
 
 
 ## Runtime Commands
-# Unzip into directory
-unzip_d () { unzip -d "${1%.zip}" "$1"; }
-
 # Conditional aliasing functionality
 alias_if_exists() {
     if command -v "$1" >/dev/null 2>&1; then
@@ -122,7 +119,7 @@ alias_if_exists() {
 }
 
 # cat for csv files
-csv() { sed 's/,,/, ,/g;s/,,/, ,/g' "$1" | column -s, -t; }
+csv() { sed 's/,,/, ,/g' "$1" | column -s, -t; }
 
 # Aliases
 alias ll="ls -lo"

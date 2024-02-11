@@ -24,7 +24,6 @@ vim.opt.wrap = false		        -- disable line wrapping
 vim.opt.breakindent = true              -- if line wrapping is on, ensure that indents are respected
 vim.opt.showbreak = " "                 -- if line wrapping is on, the consequent lines in same block are clearer to see
 vim.opt.linebreak = true                -- if line wrapping is on, doesn't cut through words
---vim.opt.cursorline = true	        -- highlight the current cursor line 
 vim.opt.showtabline = 1		        -- only show tabline if multiple tabs open
 
 vim.opt.ignorecase = true	        -- ignore case when searching
@@ -38,7 +37,7 @@ vim.opt.signcolumn = "yes"              -- column for gitsigns
 vim.opt.swapfile = false	        -- turn off swap file
 
 vim.opt.conceallevel = 2                -- enable concealing
-vim.g.vimsyn_embed = 'lP'
+vim.g.vimsyn_embed = 'lP'               -- syntax highlighting for embedded lua & python code
 
 vim.opt.spell = true                    -- enable spellcheck
 vim.opt.spelllang = "en_gb"             -- spellcheck language
@@ -75,3 +74,4 @@ require("lazy").setup(
     change_detection = { notify = false },
   }
 )
+
