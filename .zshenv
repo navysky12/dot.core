@@ -6,7 +6,6 @@ export SRC_HOME="${HOME}/.local/src"
 
 export ZDOTDIR="${XDG_CONFIG_HOME}/zsh"
 export XDOTDIR="${XDG_CONFIG_HOME}/Xorg"
-export XAUTHORITY="${XDOTDIR}/Xauthority"
 
 export LOCAL_PATH=""
 export LOCAL_LD_LIBRARY_PATH=""
