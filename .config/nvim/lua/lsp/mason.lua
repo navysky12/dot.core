@@ -32,21 +32,20 @@ return {
         "julials",
         "lua_ls",
         "pyright",
-        "texlab",
         "rust_analyzer",
+        "texlab",
       },
-      -- auto-install configured servers (with lspconfig)
       automatic_installation = true, -- not the same as ensure_installed
     })
 
-    --mason_tool_installer.setup({
-    --  ensure_installed = {
-    --    "prettier", -- prettier formatter
-    --    "stylua", -- lua formatter
-    --    "isort", -- python formatter
-    --    "black", -- python formatter
-    --    "pylint", -- python linter
-    --  },
-    --})
+    mason_tool_installer.setup({
+      ensure_installed = {
+        "black", -- python formatter
+        "shellcheck", -- shell linter | used by bashls
+        "stylua", -- lua formatter
+        "pylint", -- python linter
+        "write-good", -- english prose linter
+      },
+    })
   end,
 }

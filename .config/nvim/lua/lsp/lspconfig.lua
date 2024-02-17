@@ -111,14 +111,14 @@ return {
       on_attach = on_attach,
     })
 
-    -- configure latex server
-    lspconfig["texlab"].setup({
+    -- configure rust server
+    lspconfig["rust_analyzer"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
-    -- configure rust server
-    lspconfig["rust_analyzer"].setup({
+    -- configure latex server
+    lspconfig["texlab"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
     })
