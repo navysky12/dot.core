@@ -11,7 +11,9 @@ vim.keymap.set("n", "<Down>", "g<Down>", { desc = "Cursor movement downwards res
 vim.keymap.set("i", "<Up>", "<C-o>g<Up>", { desc = "Cursor movement upwards respects wordwrap in Insert mode" })
 vim.keymap.set("i", "<Down>", "<C-o>g<Down>", { desc = "Cursor movement downwards respects wordwrap in Insert mode" })
 
-vim.keymap.set("n", "<C-w>N", "<cmd>tabnew<CR>", { desc = "Open new tab" })
+vim.keymap.set("n", "<C-w>|", "<cmd>vnew<CR>", { desc = "Open new vertical pane" })
+vim.keymap.set("n", "<C-w>-", "<cmd>new<CR>", { desc = "Open new horizontal" })
+vim.keymap.set("n", "<C-w>c", "<cmd>tabnew<CR>", { desc = "Open new tab" })
 
 
 -- Options

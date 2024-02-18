@@ -10,3 +10,6 @@
 [submodule ".config/yazi/plugins/comicthumb.yazi"]
 	path = .config/yazi/plugins/comicthumb.yazi
 	url = https://github.com/navysky12/comicthumb.yazi.git
+[submodule ".config/tmux/plugins/tpm"]
+	path = .config/tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
