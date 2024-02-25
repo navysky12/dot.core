@@ -2,6 +2,7 @@
 
 ## Completion
 [[ -f $ZDOTDIR/local/fpath ]] && source $ZDOTDIR/local/fpath
+fpath=($ZDOTDIR/plugins/zsh-completions/src $fpath)
 autoload -Uz compinit
 compinit
 zstyle ':completion:*' menu select
@@ -111,13 +112,6 @@ fi
 
 
 ## Runtime Commands
-# Conditional aliasing functionality
-alias_if_exists() {
-    if command -v "$1" >/dev/null 2>&1; then
-        alias "$2"
-    fi
-}
-
 # cat for csv files
 csv() { sed 's/,,/, ,/g' "$1" | column -s, -t; }
 
@@ -126,6 +120,23 @@ alias ll="ls -lo"
 alias la="ll -a"
 alias rm="rm -I"
 
+# Conditional Configurations
+alias_if_exists() {
+    if command -v "$1" >/dev/null 2>&1; then
+        alias "$2"
+    fi
+}
+
+alias_if_exists zoxide 'cd=z'
+alias_if_exists nvim 'vi=nvim'
+alias_if_exists eza 'ls=eza -g --hyperlink'
+alias_if_exists bat 'bat=bat --theme=base16-256'
+alias_if_exists bat 'cat=bat -pp'
+alias_if_exists btm 'top=btm -b'
+alias_if_exists rip 'rt=rip'
+alias_if_exists feh 'feh=feh -Z.B black'
+
+if command -v zoxide >/dev/null 2>&1; then eval "$(zoxide init zsh)"; fi
 
 ## Custom Runtime Commands
 [[ -f $ZDOTDIR/local/zshrc ]] && source $ZDOTDIR/local/zshrc
