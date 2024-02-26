@@ -17,6 +17,8 @@ local filePath = os.getenv("XDG_CACHE_HOME") .. "/wal/colors-wezterm.yml"
 if io.open(filePath) then
   local colors, _ = wezterm.color.load_base16_scheme(filePath)
   config.colors = colors
+else
+  config.color_scheme = 'tokyonight_night'
 end
 config.window_background_opacity = 0.90
 config.enable_tab_bar = false

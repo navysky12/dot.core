@@ -4,6 +4,7 @@ return {
   config = function()
     require("lualine").setup({
       options = { theme = "pywal" },
+      --options = { theme = "seoul256" },
     })
   end,
 }
