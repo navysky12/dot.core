@@ -3,8 +3,8 @@ return {
   dependencies = { "nvim-tree/nvim-web-devicons" },
   config = function()
     require("lualine").setup({
-      options = { theme = "pywal" },
-      --options = { theme = "seoul256" },
+      --options = { theme = "pywal" },
+      options = { theme = "seoul256" },
     })
   end,
 }
