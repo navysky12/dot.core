@@ -169,7 +169,7 @@ enable_gpu_memory = true
 
 [mount_filter]
 is_list_ignored = true
-list = ["/boot", "/home/.*", "/mnt/.irkalla"]
+list = ["/boot", "/home/.*", "^/mnt/(\\.).*"]
 regex = true
 case_sensitive = false
 whole_word = false

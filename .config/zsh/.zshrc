@@ -3,8 +3,8 @@
 ## Completion
 [[ -f $ZDOTDIR/local/fpath ]] && source $ZDOTDIR/local/fpath
 fpath=($ZDOTDIR/plugins/zsh-completions/src $fpath)
-autoload -Uz compinit
-compinit
+autoload -Uz compinit && compinit
+autoload -U +X bashcompinit && bashcompinit
 zstyle ':completion:*' menu select
 source $ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
