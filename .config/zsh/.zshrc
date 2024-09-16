@@ -135,6 +135,8 @@ alias_if_exists bat 'cat=bat -pp'
 alias_if_exists btm 'top=btm -b'
 alias_if_exists rip 'rt=rip'
 alias_if_exists feh 'feh=feh -Z.B black'
+alias_if_exists fastfetch 'clearf=$(which clear) && fastfetch'
+alias_if_exists tmux 'tmux-session=tmux new -As'
 
 if command -v zoxide >/dev/null 2>&1; then eval "$(zoxide init zsh)"; fi
 

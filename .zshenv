@@ -27,4 +27,4 @@ export WGETRC="${XDG_CONFIG_HOME}/wgetrc"
 export NPM_CONFIG_CACHE="${XDG_CACHE_HOME}/npm"
 
 export GTK_THEME="Adwaita:dark"
-
+export QT_STYLE_OVERRIDE="Adwaita-Dark"
